@@ -3,8 +3,10 @@ const agent = require('express');
 //const mongoose = require('mongoose');
 const server = agent();
 
-const data = [];
-const users = [];
+const fs = require('fs');
+
+const data = JSON.parse(fs.readFileSync('./product.json',{encoding: "utf8"}).toString());
+const users = JSON.parse(fs.readFileSync('./users.json',{encoding: "utf8"}).toString());
 
 /*import * as mongoose from 'mongoose';
 
