@@ -15,7 +15,7 @@ const ordersRoutes = require('./routes/ordersRoutes');
 
 try {
 	
-	await mongoose.connect('mongodb+srv://loayabdelkader_db_user:zayxmMnLG0MSrFx4@study.dyfjbst.mongodb.net/todo?appName=study');
+	await mongoose.connect('');
 	await mongoose.connection.db.admin().command({ ping: 1 });
 	
 	server.use((require('cors'))());
